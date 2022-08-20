@@ -1,0 +1,26 @@
+div.row{
+    background-color: #fff;
+}
+img.about__img{
+ border-radius: 10px;
+ width: 100%;   
+}
+h1.about__heading{
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: start;
+    font-family: Montserrat,sans-serif;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.669);
+}
+btn.about.btn.pointer{
+    text-transform: capitalize;
+    width: 195px;
+    height: 55px;
+    font-size: 18px;
+    transition: .4s ease;
+}
+btn.about.btn.pointer:hover{
+    background: #fff;
+    color: #000!important;
+}
