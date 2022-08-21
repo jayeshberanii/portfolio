@@ -1,9 +1,23 @@
 import React from 'react';
 import './Home.css';
 
+var i = 0;
+var txt = 'Hi I\'m Jayesh Berani                        ';
+var speed = 100;
 
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typewriters").innerHTML += txt.charAt(i);
+    i++;
+  }
+  if(i == txt.length){
+    document.getElementById("typewriters").innerHTML =''
+    i=0;
+  }
+}setInterval(typeWriter, speed);
 
 function Home() {
+
   return (
     <div className='home'>
       <div className='home__bg'>
@@ -27,9 +41,11 @@ function Home() {
               <h1 className='home__text pz__10'>  
                 WELCOME TO MY WORLD !
               </h1>
-              <h2 className='home__text pz__10'>
-                Hi I'm Jayesh Berani
+              <div>
+              <h2 className='home__text pz__10' id='typewriters'>
+                
               </h2>
+              </div>
               <h3 className='home__text sweet'>
                 Web Developer
               </h3>
